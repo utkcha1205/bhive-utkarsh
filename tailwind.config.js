@@ -35,6 +35,10 @@ export default {
       width: {
         'full-minus-2rem': 'calc(100% - 2rem)',
       },
+      translate: {
+        '5px': '5px',
+        '-5px': '-5px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

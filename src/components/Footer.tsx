@@ -8,26 +8,22 @@ import AppleStoreSVGMB from '../assets/icons/applestore.svg';
 export const Footer: React.FC = () => {
   return (
     <>
-    <footer className="hidden md:block   h-[30rem] mt-16">
-        <div className="container py-2  h-full relative">
-          <h2 className="text-3xl font-bold text-secondaryText text-left ml-12">
-            Download our app now
-          </h2>
-          <div className='bg-white rounded-[18px] h-60 absolute w-[calc(100%_-_8rem)] lg:w-[calc(100%_-_8rem)] md:w-[calc(100%_-_3rem)] bottom-4'></div>
-          <div className="flex justify-center mb-8 md:mb-0 absolute  bottom-4 pl-8">
+    <footer className="hidden md:block mt-[5rem] mb-10">
+        <h2 className="text-3xl font-bold text-secondaryText text-left ml-12">
+          Download our app now
+        </h2>
+        <div className=" relative mt-[10rem]  bg-white pt-[70px] pr-[40px] pb-[27px] pl-[0px] flex flex-col items-end rounded-[1rem] shadow-md">
+          
+          {/* <div className="flex justify-center mb-8 md:mb-0 absolute  bottom-4 pl-8"> */}
             <img
               src={AppStoreSVG}
               alt="BHIVE Workspace app screen 1"
-              className="w-1/2 md:w-auto"
+              className="w-1/2 md:w-auto absolute top-[-7.5rem] left-[40px]"
             />
-          </div>
-          <div className="flex flex-col bg-white items-center text-center md:text-left md:items-start absolute right-20 bottom-12 lg:right-20 lg:bottom-12 md:right-4 md:bottom-[20%]">
-            <p className="text-footerText text-h4 mb-4 md:hidden lg:block block">
-              Boost your productivity with the BHIVE Workspace app.
-              <br />
-              Elevate your workspace, collaborate efficiently, 
-              <br />
-              and unlock exclusive perks.
+          {/* </div> */}
+          <div className="text-center md:text-left md:items-start w-[400px]">
+            <p className="text-footerText font-semibold text-h4 mb-4 md:hidden lg:block block">
+            Boost your productivity with the BHIVE Workspace app. Elevate your workspace, collaborate efficiently, and unlock exclusive perks.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="inline-block store-icon">
@@ -39,10 +35,10 @@ export const Footer: React.FC = () => {
             </div>
           </div>
       </div>
-      <p className="text-secondaryText text-center text-body bg-[#222E34] text-[#DDDDDD]"> &copy; Copyright 2024. Bhive Private Limited</p>
+      
     </footer>
     <footer className='md:hidden' >
-    <div className="bg-secondaryGrey text-center p-8">
+    <div className="bg-secondaryGrey text-center mt-[50px]">
       <h2 className="text-2xl font-bold text-gray-800 text-left mb-4">
         Download our app now
       </h2>
@@ -58,8 +54,10 @@ export const Footer: React.FC = () => {
         </div>
       </div>
     </div>
-    <p className="text-secondaryText text-center text-body bg-[#222E34] text-[#DDDDDD]"> &copy; Copyright 2024. Bhive Private Limited</p>
+    {/* <p className="text-secondaryText text-center text-body bg-[#222E34] text-[#DDDDDD]"> &copy; Copyright 2024. Bhive Private Limited</p> */}
   </footer>
+
+  
   </>
   );
 };

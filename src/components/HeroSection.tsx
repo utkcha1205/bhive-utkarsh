@@ -1,6 +1,5 @@
 import React from "react";
 import bgImage from "../assets/images/banner-image.png"; // Replace with your background pattern/image
-import illustration from "../assets/images/vectorimg.png"; // Replace with your illustration/image
 import Hexagon from "../assets/images/hexagon.png"; // Background Vector Image
 
 const HeroSection: React.FC = () => {
@@ -13,9 +12,8 @@ const HeroSection: React.FC = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="text-center lg:text-left z-10">
-          <h1 className="text-h1 font-bold primaryText leading-snug">
-            Host your meeting with <br /> world-class amenities. <br /> Starting at 
-            <span className="text-yellow-500">₹199/-!</span>
+          <h1 className="text-h1 font-bold primaryText leading-snug ">
+            Host your meeting with <br /> world-class amenities. <br /> Starting at  <span className="text-yellow-500 ml-2 mt-[1px]">₹199/-!</span>
           </h1>
           {/* <p className="text-sm md:text-lg font-medium mt-4 text-gray-600">
             Starting at <span className="text-yellow-500 font-bold"></span>
@@ -69,7 +67,7 @@ const HeroSection: React.FC = () => {
             alt="Illustration"
             className=" object-contain"
         />
-        <div className="video-container absolute top-10 left-[0] object-contain w-[388px]">
+        <div className="video-container absolute top-10 left-0 object-contain w-[388px]">
             <video
               style={{ mixBlendMode: "multiply" }}
               src='vedios/coworkingVedio.mp4'

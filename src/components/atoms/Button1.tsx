@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowSvg from '../../components/icons/icons/Arrow'
+import ArrowSvg from '../../components/icons/icons/Arrow';
 
 
 interface ButtonProps {
@@ -33,11 +33,11 @@ const Button1: React.FC<Button1Props> = ({ buttons }) => {
               {/* <p className="lg:text-lg text-base font-bold text-[#263238]">{button.price}</p> */}
               <p className="lg:text-h4 text-base font-bold text-primaryText text-left">
                 {button.price}
-                <span className="text-[12px] font-normal">/{!button?.day}  {`${button?.day && button?.day > 1 ? 'Days' : 'Day'}`}</span>
+                <span className="text-body3 font-normal">/{!button?.day}  {`${button?.day && button?.day > 1 ? 'Days' : 'Day'}`}</span>
               </p>
               {/* Discount Tag */}
               {button.discount && (
-                <div className="text-[8px] text=[#FFFDF7] absolute top-[-8px] right-[25%] bg-primaryText text-white  px-2 py-[2px] rounded">
+                <div className="text-[8px] text=[#FFFDF7] absolute top-[-8px] right-1/4 bg-primaryText text-white  px-2 py-[2px] rounded">
                   {button.discount}
                 </div>
               )}

@@ -25,7 +25,7 @@ const AmmentiesComp: React.FC = () => {
   return (
     <div className="w-full py-10 px-6">
       <div className="">
-        <h2 className="text-h2 font-bold text-gray-900 mb-8">Why Choose Us?</h2>
+        <h2 className="text-h2 font-bold text-gray-900 mb-8 text-left">Why Choose Us?</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 ">
           {features.map((feature, index) => (
            
@@ -36,21 +36,25 @@ const AmmentiesComp: React.FC = () => {
            <div
               className={`hidden md:flex items-center border-gray-100 px-6 py-2 h-[80px] ${
                 feature?.br ? "border-r" : ""
-              } ${feature?.bb ? "border-b" : ""} hover:bg-white hover:shadow-md rounded-lg group hover:duration-500 hover:transition-all hover:ease-in-out `}
+              } ${feature?.bb ? "border-b" : ""} rounded-lg hover:bg-white hover:shadow-md hover:translate-x-5px hover:translate-y--5px hover:animate-fade-up hover:animate-delay-200 hover:animate-ease-linear transition-all duration-500  group`}
             >
               <img
                 src={feature?.icon}
                 alt={feature?.title}
-                className="w-8 h-8 mr-4"
+                className="size-8 mr-4"
               />
               <div>
-                <p className="text-h5  text-primaryText  md:text-left   group-hover:font-semibold group-hover:animate-fade-up group-hover:animate-delay-200 group-hover:animate-ease-linear  group-hover:duration-500 group-hover:transition-all group-hover:ease-in-out ">
+                {/* <p className="text-h5  text-primaryText  md:text-left group-hover:ml-[1px]  group-hover:font-semibold group-hover:animate-fade-up group-hover:animate-delay-200 group-hover:animate-ease-linear  group-hover:duration-500 group-hover:transition-all group-hover:ease-in-out ">
+                  {feature?.title}
+                </p> */}
+
+                <p className="text-h5  text-primaryText  md:text-left group-hover:font-semibold duration-200 transition-all ease-in-out ">
                   {feature?.title}
                 </p>
                 {/* Show this on hover of the parent div */}
-                <p className="text-body3 text-secondaryText md:text-left hidden group-hover:block group-hover:ml-[2px] group-hover:duration-500 group-hover:transition-all group-hover:ease-in-out ">
+                {/* <p className="text-body3 text-secondaryText md:text-left hidden group-hover:block group-hover:ml-[2px] group-hover:duration-500 group-hover:transition-all group-hover:ease-in-out ">
                   {feature?.desc}
-                </p>
+                </p> */}
               </div>
             </div>
 
